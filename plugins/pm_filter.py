@@ -108,7 +108,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}]📂 🎬{file.file_name}🎬", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -117,10 +117,10 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"🎬{file.file_name}🎬", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"📂{get_size(file.file_size)}📂",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -394,11 +394,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('𝐺𝑟𝑜𝑢𝑝', url='https://t.me/cinemaenglish123'),
-                InlineKeyboardButton('𝐷𝑒𝑣', url='https://t.me/Abhisheksvlog')
+                InlineKeyboardButton('𝐺𝑟𝑜𝑢𝑝', url='https://t.me/moviespot001100'),
+                InlineKeyboardButton('𝐷𝑒𝑣', url='https://t.me/zinan00100')
             ],
             [
-                InlineKeyboardButton('𝐶𝒉𝑎𝑛𝑛𝑒𝑙', url=f'https://t.me/justaupdatechannel')
+                InlineKeyboardButton('𝐶𝒉𝑎𝑛𝑛𝑒𝑙', url=f'https://t.me/moviespot00100')
             ]
             ]
 
@@ -447,11 +447,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('𝐺𝑟𝑜𝑢𝑝', url='https://t.me/cinemaenglish123'),
-                InlineKeyboardButton('𝐷𝑒𝑣', url='https://t.me/Abhisheksvlog')
+                InlineKeyboardButton('𝐺𝑟𝑜𝑢𝑝', url='https://t.me/moviespot001100'),
+                InlineKeyboardButton('𝐷𝑒𝑣', url='https://t.me/zinan00100')
             ],
             [
-                InlineKeyboardButton('𝐶𝒉𝑎𝑛𝑛𝑒𝑙', url=f'https://t.me/justaupdatechannel')
+                InlineKeyboardButton('𝐶𝒉𝑎𝑛𝑛𝑒𝑙', url=f'https://t.me/moviespot00100')
             ]
             ]
         await query.answer()
